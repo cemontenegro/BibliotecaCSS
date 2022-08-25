@@ -1,0 +1,122 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clase fixed-width container que se "autocentrará" a sí misma */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Atajo flex */
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightcyan;
+}
+
+/* Clase fixed-width container que se "autocentrará" a sí misma junto con el navegador*/
+.container, .navbar{
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.navbar{
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.col-i{
+    flex: 2;
+    margin: 30px 15px 30px 0px;
+}
+
+.col-d{
+    flex: 1;
+    margin: 30px 0px 30px 15px;
+}
+
+/* Tabla que se alinea sin puntos*/
+
+.nav-links{
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+}
+
+ul{
+    display:inline-flex;
+    list-style:none;
+    margin: 10px;
+}
+
+a{
+    color:#c7c7c7;
+    margin: 0px 25px;
+    text-decoration: none;
+}
+
+/* boton personalizado*/
+.btn{
+    background-color: #17a2b8;
+    padding: 5px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/* boton redondeado*/
+#btn1{
+    color: #149c9e;
+    font-size: 18px;
+    border-color: #149c9e;
+    margin: 50px 50px 10px;
+    padding: 5px 50px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+/* boton redondo*/
+#btn2{
+    background-color: #00d1b2;
+    color: white;
+    font-size: 25px;
+    margin: 10px 50px;
+    padding: 10px 15px;
+    border-color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* boton rectangular con sombra*/
+#btn3{
+    background-color: #2b78e4;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 10px 50px;
+    padding: 10px 40px;
+    box-shadow: 5px 5px 1px black;
+}
+
+/* Imagen con borde redondeado*/
+.user img{
+    height: 100px;
+    width: 100px;
+    border: 3px solid #cccccc;
+    padding: 3px;
+    background-color: white;
+    border-radius: 100px;
+    margin-left: 45px;
+    margin-top: 45px;
+}
